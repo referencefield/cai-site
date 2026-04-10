@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cai.referencefield.com/sitemap.xml

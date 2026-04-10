@@ -1,0 +1,105 @@
+---
+id: start-here
+title: Compliance as Infrastructure
+sidebar_label: Start Here
+slug: /
+description: Version 1 release of the Compliance as Infrastructure manuscript, defining the architectural claim that compliance must operate as a property of system execution.
+---
+
+# Start Here
+
+![Compliance as Infrastructure Overview](/img/compliance-as-infrastructure-capstone.png)
+
+![End-to-end Compliance as Infrastructure flow showing how obligations are translated into machine-testable constraints, evaluated at runtime, transformed into evidence artifacts, and exposed for external verification](/img/cai-end-to-end-flow.png)
+
+## What This Is
+
+This site is the Version 1 release of the Compliance as Infrastructure manuscript.
+
+The manuscript defines a single claim:
+
+Compliance is not a process applied after systems run.  
+It is a property of how systems operate.
+
+This system does not guarantee truth. It makes how decisions are constructed visible, attributable, and contestable.
+
+The materials you are about to read establish that claim, explain why it is necessary, and define the architecture required to support it.
+
+This is a reference manuscript, not a linear book. It is designed to be navigated, not read from beginning to end.
+
+## How to Read This
+
+There are two ways to approach the manuscript.
+
+### 1. Sequential Path
+
+If you are new to the material, begin with:
+
+- Preface
+- Category Foundation
+- Trust Gap
+- Failure Mechanics
+- Architecture
+
+Failure Mechanics includes:
+- Documentation Debt
+- Evidence Latency and Enforcement Drift
+- Oracle Problem
+
+Architecture includes:
+- Translation Layer
+- Control Assertion Engine
+- Attestation Layer
+
+This path builds the argument step by step.
+
+### 2. Targeted Navigation
+
+If you are already familiar with compliance systems or infrastructure design, you may navigate directly to specific sections:
+
+- Failure Mechanics, to understand why existing systems fail
+- Architecture, to understand the proposed system
+- Glossary, to resolve specific terms
+
+Each page is written to stand on its own.
+
+## What This Is Not
+
+This is not:
+
+- a policy framework
+- a vendor solution
+- a compliance checklist
+- a consulting methodology
+
+It is a structural argument about how compliance must be implemented in modern systems.
+
+## What to Expect
+
+The manuscript is written in the register of a technical systems architecture document.
+
+- Terms are defined precisely
+- Claims are constrained by what the architecture can support
+- Trade-offs and limitations are stated explicitly
+
+Some sections are intentionally dense. They are load-bearing.
+
+## Version
+
+This is Version 1.0 of the Compliance as Infrastructure manuscript.
+
+This version is fixed and will not change after publication.
+
+Future work may be extended, interpreted, or advanced by others.
+
+This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+## Where to Go Next
+
+If you are starting fresh:
+
+→ Begin with the Preface
+
+If you are looking for something specific:
+
+→ Use the sidebar to navigate by concept
