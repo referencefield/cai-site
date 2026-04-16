@@ -45,11 +45,15 @@ module.exports = {
           id: 'trust-gap',
           label: 'Trust Gap',
         },
-
         {
           type: 'category',
           label: 'Failure Mechanics',
-          collapsible: false,
+          link: {
+            type: 'doc',
+            id: 'failure-mechanics',
+          },
+          collapsible: true,
+          collapsed: true,
           items: [
             {
               type: 'doc',
@@ -68,11 +72,15 @@ module.exports = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Architecture',
-          collapsible: false,
+          link: {
+            type: 'doc',
+            id: 'architecture',
+          },
+          collapsible: true,
+          collapsed: true,
           items: [
             {
               type: 'doc',
@@ -91,7 +99,38 @@ module.exports = {
             },
           ],
         },
-
+        {
+          type: 'category',
+          label: 'Extensions',
+          link: {
+            type: 'doc',
+            id: 'extensions/index',
+          },
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              type: 'doc',
+              id: 'extensions/upstream-positioning',
+              label: 'Upstream Positioning',
+            },
+            {
+              type: 'doc',
+              id: 'extensions/governance-diagnostic',
+              label: 'Diagnostic Tool',
+            },
+            {
+              type: 'doc',
+              id: 'extensions/readiness-model',
+              label: 'Readiness Model',
+            },
+            {
+              type: 'doc',
+              id: 'extensions/regulatory-crosswalk',
+              label: 'Regulatory Crosswalk',
+            },
+          ],
+        },
         {
           type: 'doc',
           id: 'future-of-compliance-infrastructure',

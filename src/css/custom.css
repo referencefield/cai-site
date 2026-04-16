@@ -116,9 +116,13 @@
 }
 
 .theme-doc-sidebar-container {
-  width: 280px !important;
-  min-width: 280px !important;
   border-right: 1px solid #e5e7eb;
+
+  /* ✅ Correct scrolling behavior */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .menu__link {
@@ -195,7 +199,7 @@
 /* FINAL MOBILE FIX */
 @media (max-width: 996px) {
   .navbar__title {
-    display: none; /* hide long title on mobile */
+    display: none;
   }
 
   .navbar__logo img,
