@@ -1,0 +1,48 @@
+schema_version: 1
+repository: referencefield/cai-site
+visibility: public
+status: active
+purpose: Public Docusaurus publication site and canonical published corpus for Compliance as Infrastructure (CAI).
+profile_role: local-repository-bootstrap
+last_verified: 2026-07-19
+inventory_confidence: verified-purpose-partial-tree
+
+global_governance:
+  canonical_repository: referencefield/conceptual-integrity-review
+  protocol_path: j-space/repository-governance/GLOBAL_REPOSITORY_HYGIENE_PROTOCOL.md
+  registry_path: j-space/repository-governance/repository-registry.yaml
+  shared_protocols_path: j-space/repository-governance/shared-protocols.yaml
+
+bootstrap:
+  rule: Fetch this file by exact path before modifying the repository.
+  canonical_entrypoints:
+    - README.md
+    - docs/
+    - docusaurus.config.js
+    - package.json
+  cross_repo_trigger: Follow the global protocol before changing CAI architecture that may affect implementations, reviews, or shared governance.
+  search_fallback: Empty broad search results do not prove absence. Use exact paths and preserve uncertainty.
+
+authority:
+  local_verified_facts_outrank_stale_registry: true
+  reconcile_registry_when_conflict_found: true
+  chat_memory_is_not_authoritative: true
+
+provides:
+  - compliance-as-infrastructure-publication
+  - cai-public-architecture
+consumes: []
+relationships:
+  - repository: referencefield/spacemolt
+    type: architecture-to-prototype
+    state: evidenced
+explicit_exclusions: []
+
+maintenance:
+  update_when:
+    - canonical manuscript paths move
+    - CAI architecture changes affect declared consumers
+    - publication role or visibility changes
+  do_not_add:
+    - speculative consumers
+    - duplicate normative protocol text
