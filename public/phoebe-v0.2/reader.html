@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phoebe Pyncheon v0.2</title>
+<style>
+body{font-family:Georgia,serif;line-height:1.65;max-width:760px;margin:0 auto;padding:28px 20px 80px;color:#171717;background:#fff}h1{font-size:2rem;margin-bottom:.2rem}h2{margin-top:2.5rem}pre{white-space:pre-wrap;font:inherit}#status{font-family:system-ui,sans-serif;color:#666;margin-bottom:2rem}.chapter{margin-top:3rem}.chapter:first-of-type{margin-top:1rem}
+</style>
+</head>
+<body>
+<h1>Phoebe Pyncheon Companion Novel</h1>
+<p id="status">Version 0.2 · complete continuous manuscript</p>
+<main id="book"></main>
+<script>
+const files=['01-arrival.md','02-holgrave.md','03-clifford.md','04-the-judge.md','05-the-window.md','06-alice.md','07-departure.md','08-home.md','09-return.md','10-after.md','11-pieces.md','12-leaving.md'];
+const book=document.getElementById('book');
+(async()=>{for(const file of files){const r=await fetch(file);if(!r.ok){throw new Error('Unable to load '+file)}const text=await r.text();const section=document.createElement('section');section.className='chapter';const pre=document.createElement('pre');pre.textContent=text;section.appendChild(pre);book.appendChild(section)}})().catch(e=>{document.getElementById('status').textContent='Loading error: '+e.message});
+</script>
+</body>
+</html>
