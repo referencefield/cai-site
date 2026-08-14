@@ -13,6 +13,12 @@ global_governance:
   registry_path: j-space/repository-governance/repository-registry.yaml
   shared_protocols_path: j-space/repository-governance/shared-protocols.yaml
 
+session_context:
+  router_repository: referencefield/conceptual-integrity-review
+  router_path: j-space/repository-governance/context-routing/SESSION-CONTEXT-ROUTER.yaml
+  validation_queue_path: j-space/repository-governance/context-routing/LEVEL5-VALIDATION-QUEUE.yaml
+  rule: Use the router after this profile only when durable repository context materially matters; resume pending validation only on a natural trigger.
+
 bootstrap:
   rule: Fetch this file by exact path before modifying the repository.
   canonical_entrypoints:
